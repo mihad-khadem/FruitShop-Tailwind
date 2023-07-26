@@ -24,15 +24,110 @@
   </head>
   <body style="font-family: 'Lato';">
     <!-- Header Section Starts -->
-    <header>
-        <!-- Nav Section Starts -->
-        
+    <header class="container mx-auto">
+      <!-- small device -->
+        <div class="navbar ">
+          <div class="justify-evenly">
+              <div class="flex pl-5 lg:hidden">
+                  <img src="assets/logo.png" alt="logo">
+                  <span class="text-xl pt-5 ">Fruit Burst</span>
+              </div>
+              <div class="dropdown mx-10">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </label>
+                    <ul tabindex="0"class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li tabindex="0"><li><a>Home </a></li></li>
+                      <li tabindex="0"><li><a>About Us</a></li></li>
+                      <li tabindex="0"><li><a>Shop</a></li></li>
+                      <li tabindex="0"><li><a>All fruits</a></li></li>
+                    </ul>
+              </div>
+             </div>
+          <!-- large device -->
+          <div class="lg:bg-[#F85559] rounded-full ">
+              <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All fruits</a></li>
+                  </ul>
+              </div>
+              <div class="flex items-center">
+                  <div class="lg:flex lg:pl-40">
+                      <img src="assets/logo.png" alt="logo">
+                      <span class="text-xl pt-5 ">Fruit Burst</span>
+                  </div>
+                  <div class=" lg:form-control items-end pl-52 ">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full"/>
+                  </div>
+              </div>
+          </div>
+      </div>
     </header>
     <!-- Header Section Ends -->
     <!-- Main Section Starts  -->
-    <main>
+    <main class="container mx-auto">
       <!-- Banner Section Starts  -->
+      <section class="lg:mx-48 rounded-lg">
+        <div class="carousel w-full py-10">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="w-full h-full absolute text-center items-center text-white py-16 bg-gradient-to-b from-[#121212] to- [#12121200]"> 
+            <p class="lg:text-7xl">Exotic tastes at your <br> <span class="">doorstep</span></p>
+             <p class="text-lg py-3">We supply highly quality organic products</p>
+          <button class="btn text-white border-0 bg-[#F85559]">Shop Now</button>
+            </div>
+              <img src="assets/banner1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full"  >
+              <div class="w-full h-full absolute text-center items-center text-white py-16 bg-gradient-to-b from-[#121212] to- [#12121200] "> 
+              <p class="lg:text-7xl">Exotic tastes at your <br> <span class="">doorstep</span></p>
+               <p class="text-lg py-3">We supply highly quality organic products</p>
+              <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+              </div>
+              <img src="assets/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
 
+            <div class="w-full h-full absolute text-center items-center text-white py-16 bg-gradient-to-b from-[#121212] to- [#12121200]"> 
+              <p class="lg:text-7xl">Exotic tastes at your <br> <span class="">doorstep</span></p>
+               <p class="text-lg py-3">We supply highly quality organic products</p>
+            <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+              </div>
+              <img src="assets/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+
+            <div class="w-full h-full absolute text-center items-center text-white py-16 bg-gradient-to-b from-[#121212] to- [#12121200]"> 
+              <p class="lg:text-7xl">Exotic tastes at your <br> <span class="">doorstep</span></p>
+               <p class="text-lg py-3">We supply highly quality organic products</p>
+            <button class="btn btn-primary bg-[#F85559]">Shop Now</button>
+              </div>
+              <img src="assets/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </section>
       <!-- Banner Section Ends -->
       <!-- Deals Section Starts  -->
 
